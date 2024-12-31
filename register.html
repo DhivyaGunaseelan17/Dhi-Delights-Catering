@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dhi-Delights Catering</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registerstyle.css">
+</head>
+<body>
+    <!-- BACKGROUND-WRAPPER -->
+    <main class="background_wrapper">
+        <div class="login_form_wrapper">
+            <!-- FORM -->
+            <form action="#" class="login__form">
+                <h1 class="title">Sign Up</h1>
+  
+                <div class="login_form_content">
+                    <!-- Name -->
+                    <div class="login_content_box">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <div class="login_content_box--input">
+                            <input type="text" placeholder=" " class="login__input name--input" required />
+                            <label for="name" class="login__label">Name</label>
+                        </div>
+                    </div>
+                    <!-- Email -->
+                    <div class="login_content_box">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <div class="login_content_box--input">
+                            <input type="email" placeholder=" " class="login__input email--input" required />
+                            <label for="email" class="login__label">Email</label>
+                        </div>
+                    </div>
+                    <!-- Phone Number -->
+                    <div class="login_content_box">
+                        <ion-icon name="call-outline"></ion-icon>
+                        <div class="login_content_box--input">
+                            <input type="tel" placeholder=" " class="login__input phone--input" required />
+                            <label for="phone" class="login__label">Phone Number</label>
+                        </div>
+                    </div>
+                   
+                    <div class="login_content_box">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <div class="login_content_box--input">
+                            <input type="password" placeholder=" " class="login__input password--input" required />
+                            <label for="password" class="login__label">Password</label>
+                        </div>
+                    </div>
+                    <!-- Confirm Password -->
+                    <div class="login_content_box">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <div class="login_content_box--input">
+                            <input type="password" placeholder=" " class="login__input confirm-password--input" required />
+                            <label for="confirm-password" class="login__label">Confirm Password</label>
+                        </div>
+                    </div>
+                    <!-- Sign Up Button -->
+                    <button class="button__signup">Sign Up</button>
+                    <!-- Login Link -->
+                    <p class="login__link text--sm">
+                        Already have an account? <a href="login.html">Login</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="js/register.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

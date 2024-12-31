@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="user_dashboardstyle.css">
+	
+
+
+	<title>DHI-DELIGHTS CATERING</title>
+</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+		
+			<span class="text">DHI-DELIGHTS CATERING</span>
+		</a>
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="#">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Menus</span>
+				</a>
+			</li>
+			<li>
+				<a href="place_order.html">
+					<i class='bx bxs-shopping-bag-alt' ></i>
+					<span class="text">Place Order</span>
+				</a>
+			</li>
+			<li>
+				<a href="address_page.html">
+					<i class='bx bxs-doughnut-chart' ></i>
+					<span class="text">Address</span>
+				</a>
+			</li>
+			<li>
+				<a href="order_confirmation.html">
+					<i class='bx bxs-message-dots' ></i>
+					<span class="text">Order Details</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-group' ></i>
+					<span class="text">Account</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="#">
+					<i class='bx bxs-cog' ></i>
+					<span class="text">Settings</span>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link">Categories</a>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">0</span>
+			</a>
+			<a href="#" class="profile">
+				<img src="images/dhi-delights-catering-high-resolution-logo.png">
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Dashboard</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Dashboard</a>
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a class="active" href="#">Menus</a>
+						</li>
+                        
+					</ul>
+					<!-- Cart section -->
+<div id="cart">
+    <h3>Cart</h3>
+    <ul id="cart-items"></ul>
+    <p>Total: <span id="total-price">0</span></p>
+    <button id="place-order-btn">Place Order</button>
+</div>
+                </div>
+               
+                      
+				</div>
+                <h1 style="text-align: center; color: rgb(14, 201, 207);">Explore our Services!</h1>
+
+				<div class="menu-container">
+					<div class="switch-mode">
+						<button class="switch-btn active" data-mode="breakfast">Breakfast</button>
+						<button class="switch-btn active" data-mode="lunch">Lunch</button>
+						<button class="switch-btn active" data-mode="dinner">Dinner</button>
+						<button class="switch-btn active" data-mode="starter">Starters and Sweets</button>
+						<button class="switch-btn active" data-mode="berevages">Berevages, Juices, Desserts</button>
+					</div>
+					<div id="breakfast-menu" class="menu-list">
+						<!-- Breakfast menu items here -->
+						<label for="filter">Filter:</label>
+				<select id="filter">
+					<option value="all">All</option>
+					<option value="breakfastveg">South Indian Menu</option>
+					<option value="breakfastnonveg">North Indian Menu</option>
+				</select>
+				
+				<ul>
+					<li>
+						<h3>South Indian Menus</h3>
+						<div class="menu-container" >
+							<div class="menu-item">
+								<img src="images/food/Idly.jpg" alt="Idly">
+								<h2>Idly</h2>
+								<p class="price">Rs. 40</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/Plain Dosai.jpg" alt="Dosai">
+								<h2>Plain Dosai</h2>
+								<p class="price">Rs. 55</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/vada1.jpg" alt="Vada">
+								<h2>Vadda With Chutney</h2>
+								<p class="price">Rs. 15</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<!-- Add more menu items as needed -->
+							<div class="menu-item">
+								<img src="images/food/paddu.jpg" alt="Paddu">
+								<h2>Paddu</h2>
+								<p class="price">Rs. 40</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/Parotta1.jpg" alt="Parota">
+								<h2>Parotta</h2>
+								<p class="price">Rs. 60</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/Appam.jpg" alt="Appam">
+								<h2>Appam</h2>
+								<p class="price">Rs. 40</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/Masala Dosai.jpg" alt="Masala">
+								<h2>Masala Dosai</h2>
+								<p class="price">Rs. 60</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/kichidi.jpg" alt="Kichidi">
+								<h2>Kichidi</h2>
+								<p class="price">Rs. 45</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/pongal.jpg" alt="pongal">
+								<h2>Ven Pongal</h2>
+								<p class="price">Rs. 60</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/sweet pongal.jpg" alt="pongal2">
+								<h2>Sakkara Pongal / Sweet Pongal</h2>
+								<p class="price">Rs. 60</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/idiyappam.jpg" alt="idiyappam">
+								<h2>Idiyappam</h2>
+								<p class="price">Rs. 50</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/chapathi.jpg" alt="chapathi">
+								<h2>chapathi</h2>
+								<p class="price">Rs. 45</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/poori.jpg" alt="poori">
+								<h2>Poori</h2>
+								<p class="price">Rs. 50</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/idiyappam.jpg" alt="idiyappam">
+								<h2>Idiyappam</h2>
+								<p class="price">Rs. 50</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/uthaappam.jpg" alt="uthaappam">
+								<h2>uthaappam</h2>
+								<p class="price">Rs. 55</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/rava idly.jpg" alt="rava">
+								<h2>Rava Idly</h2>
+								<p class="price">Rs. 50</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+						</div>
+						<!--Non veg items-->
+						<h3>North Indian Menus</h3>
+							<div class="menu-container" >
+								<div class="menu-item">
+									<img src="images/food/alloo.jpg" alt="ppori">
+									<h2>Aloo Puri</h2>
+									<p class="price">Rs. 40</p>
+									<button class="order-btn">Add to Cart</button>
+								</div>
+								
+									<div class="menu-item">
+										<img src="images/food/panner paratha.jpg" alt="ppori">
+										<h2>Panner Paratha</h2>
+										<p class="price">Rs. 40</p>
+										<button class="order-btn">Add to Cart</button>
+									</div>
+									
+										
+											<div class="menu-item">
+												<img src="images/food/moong.jpg" alt="ppori">
+												<h2>Moong Dal Chilla </h2>
+												<p class="price">Rs. 40</p>
+												<button class="order-btn">Add to Cart</button>
+											</div>
+											
+												<div class="menu-item">
+													<img src="images/food/rava chilla.jpg" alt="ppori">
+													<h2>Rava Chilla</h2>
+													<p class="price">Rs. 40</p>
+													<button class="order-btn">Add to Cart</button>
+												</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div id="lunch-menu" class="menu-list">
+				<!-- Lunch menu items here -->
+				<label for="lunchfilter">Filter:</label>
+				<select id="lunchfilter">
+					<option value="lunchall">All</option>
+					<option value="lunchveg">South Indian- Veg Menu</option>
+					<option value="lunchnonveg">South Indian- Non Menu</option>
+					<option value="lunchbriyani">Briyani</option>
+					<option value="lunchnorth">North Indian Menu</option>
+					
+				</select>
+				<ul>
+					<li>
+						<h3>South Indian - Veg Menus</h3>
+						<div class="menu-container">
+							<div class="menu-item">
+								<img src="images/food/south thalli.jpg" alt="Sambar Rice">
+								<h2>South Indian Thalli</h2>
+								<p class="price">Rs. 80</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/sambar rice.jpg" alt="Sambar Rice">
+								<h2>Sambar Rice</h2>
+								<p class="price">Rs. 80</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<!-- Add more lunch menu items as needed -->
+							<div class="menu-item">
+								<img src="images/food/lemon.jpg" alt="Lemon Rice">
+								<h2>Lemon Rice</h2>
+								<p class="price">Rs. 60</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/coconut.jpg" alt="Coconut Rice">
+								<h2>Coconut Rice</h2>
+								<p class="price">Rs. 70</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/curd rice.jpg" alt="Curd Rice">
+								<h2>Curd Rice</h2>
+								<p class="price">Rs. 40</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/poriyal.jpg" alt="Curd Rice">
+								<h2>Poriyal (potato, cabbage,chenna)</h2>
+								<p class="price">Rs. 30</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/kottu.jpg" alt="Curd Rice">
+								<h2>Kootu (Pudalai, chow chow, cabbage)</h2>
+								<p class="price">Rs. 50</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/sambhar.jpg" alt="Curd Rice">
+								<h2>Sambhar</h2>
+								<p class="price">Rs. 50</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/rasam.jpg" alt="Curd Rice">
+								<h2>Rasam</h2>
+								<p class="price">Rs. 50</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/vatha kulambu.jpg" alt="Curd Rice">
+								<h2>Vatha -</h2>
+								<h2>kuzhambu</h2>
+								<p class="price">Rs. 50</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/appalam.jpg" alt="Curd Rice">
+								<h2>Appalam / Papad</h2>
+								
+								<p class="price">Rs. 20</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/brinjal.jpg" alt="Curd Rice">
+								<h2>Brinjal pepper kuzhambu</h2>
+								
+								<p class="price">Rs. 20</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+						</div>
+						<!--Briyani Items-->
+						<h3>Briyani </h3>
+						<div class="menu-container">
+							<div class="menu-item">
+								<img src="images/food/ambur briyani.jpg" alt="Chicken Biryani">
+								<h2>Ambur Briyani </h2>
+								<p class="price">Rs. 250</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/mutton briyani.jpg" alt="Chicken Biryani">
+								<h2>Mutton Briyani </h2>
+								<p class="price">Rs. 250</p>
+								<button class="order-btn">Add to Cart</button>
+
+							</div>
+							<div class="menu-item">
+								<img src="images/food/chicken briyani.jpg" alt="Chicken Biryani">
+								<h2>Chicken Briyani </h2>
+								<p class="price">Rs. 250</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/chetti chick bri.jpg" alt="Chicken Biryani">
+								<h2>Chettinadu Chicken Briyani </h2>
+								<p class="price">Rs. 250</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/egg briyani.jpg" alt="Chicken Biryani">
+								<h2>Egg Briyani </h2>
+								<p class="price">Rs. 250</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/handi briyani.jpg" alt="Chicken Biryani">
+								<h2>Handi Briyani </h2>
+								<p class="price">Rs. 250</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/prawn briyani.jpg" alt="Chicken Biryani">
+								<h2>Prawn Briyani </h2>
+								<p class="price">Rs. 250</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/sindi briyani.jpg" alt="Chicken Biryani">
+								<h2>Sindi Briyani </h2>
+								<p class="price">Rs. 250</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/luckniw briyani.jpg" alt="Chicken Biryani">
+								<h2>Lucknow Briyani </h2>
+								<p class="price">Rs. 250</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/dindugal briyani.jpg" alt="Chicken Biryani">
+								<h2>Dindugal Briyani </h2>
+								<p class="price">Rs. 250</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/hyderabad briyani.jpg" alt="Chicken Biryani">
+								<h2>hyderabad Briyani </h2>
+								<p class="price">Rs. 250</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+
+						
+							</div>
+						<!--South Indian -Non Veg menu-->
+						<h3>South Indian - Non Veg Menus</h3>
+						<div class="menu-container">
+							<div class="menu-item">
+								<img src="images/food/non veg gravy.jpg" alt="Chicken Biryani">
+								<h2>Non Veg Gravy  </h2>
+								<p class="price">Rs. 150</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/non veg masala.jpg" alt="Chicken Biryani">
+								<h2>Non Veg Masala </h2>
+								<p class="price">Rs. 150</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/non veg thalli.jpg" alt="Chicken Biryani">
+								<h2>Non Veg Thalli  </h2>
+								<p class="price">Rs. 150</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/spicy mutton non.jpg" alt="Chicken Biryani">
+								<h2>Spicy Mutton Gravy  </h2>
+								<p class="price">Rs. 150</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/chicken spicy non.jpg" alt="Chicken Biryani">
+								<h2>Chicken Spicy Gravy </h2>
+								<p class="price">Rs. 150</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/chicken karahi non.jpg" alt="Chicken Biryani">
+								<h2>Chicken karahi Gravy  </h2>
+								<p class="price">Rs. 150</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/prawn non.jpg" alt="Chicken Biryani">
+								<h2>Prawn Gravy  </h2>
+								<p class="price">Rs. 150</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/andhra non.jpg" alt="Chicken Biryani">
+								<h2>Andhra Gravy  </h2>
+								<p class="price">Rs. 150</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/karnataka non.jpg" alt="Chicken Biryani">
+								<h2>Karnataka Gravy  </h2>
+								<p class="price">Rs. 150</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/kolhapuri non.jpg" alt="Chicken Biryani">
+								<h2>Kolhapuri Gravy  </h2>
+								<p class="price">Rs. 150</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/seer fish non.jpg" alt="Chicken Biryani">
+								<h2>Seer Fish Gravy  </h2>
+								<p class="price">Rs. 150</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/fish roast non.jpg" alt="Chicken Biryani">
+								<h2> Fish Roast  </h2>
+								<p class="price">Rs. 150</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/masala fish non.jpg" alt="Chicken Biryani">
+								<h2>Masala Fish   </h2>
+								<p class="price">Rs. 150</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/mutton semi non.jpg" alt="Chicken Biryani">
+								<h2>Mutton Semi Gravy  </h2>
+								<p class="price">Rs. 150</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/tomato fish.jpg" alt="Chicken Biryani">
+								<h2>Tomato Fish Gravy  </h2>
+								<p class="price">Rs. 150</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/chicken lolipop.jpg" alt="Chicken Biryani">
+								<h2>Chicken Lolipop  </h2>
+								<p class="price">Rs. 200</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/chicken majestic.jpg" alt="Chicken Biryani">
+								<h2>Chicken Majestic </h2>
+								<p class="price">Rs. 200</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/chiecken manuchurian.jpg" alt="Chicken Biryani">
+								<h2>Chicken Manuchurian  </h2>
+								<p class="price">Rs. 200</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/chicken patties.jpg" alt="Chicken Biryani">
+								<h2>Chicken Patties  </h2>
+								<p class="price">Rs. 200</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/fish pakora chicken.jpg" alt="Chicken Biryani">
+								<h2>Fish Pakora </h2>
+								<p class="price">Rs. 200</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/meatballs.jpg" alt="Chicken Biryani">
+								<h2>Meat Balls </h2>
+								<p class="price">Rs. 200</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/chilli prawns.jpg" alt="Chicken Biryani">
+								<h2>Chilli Prawns  </h2>
+								<p class="price">Rs. 200</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/egg65.jpg" alt="Chicken Biryani">
+								<h2>Egg 65  </h2>
+								<p class="price">Rs. 100</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/seeks.jpg" alt="Chicken Biryani">
+								<h2>Seekh kebabs  </h2>
+								<p class="price">Rs. 200</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							</div>
+							
+						<!-- North Indian Items items -->
+						<h3>North Indian Menus</h3>
+						<div class="menu-container">
+							<div class="menu-item">
+								<img src="images/food/North indian thalli.jpg" alt="Chicken Biryani">
+								<h2>North Indian Thalli </h2>
+								<p class="price">Rs. 250</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/butter chicken.jpg" alt="Butter Chicken">
+								<h2>Butter Chicken</h2>
+								<p class="price">Rs. 200</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<!-- Add more lunch non-veg menu items as needed -->
+							<div class="menu-item">
+								<img src="images/food/chicken fired.jpg" alt="Chicken Biryani">
+								<h2>Chicken Fired Rice</h2>
+								<p class="price">Rs. 250</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/corn fried.jpg" alt="Chicken Biryani">
+								<h2>Corn Fired Rice</h2>
+								<p class="price">Rs. 250</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/panner fried rice.jpg" alt="Chicken Biryani">
+								<h2>Panner Fired Rice</h2>
+								<p class="price">Rs. 250</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/jeera.jpg" alt="Chicken Biryani">
+								<h2>Jeera Rice</h2>
+								<p class="price">Rs. 150</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/veg fried rice.jpg" alt="Chicken Biryani">
+								<h2>Veg Fired Rice</h2>
+								<p class="price">Rs. 250</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/thai fired rice.jpg" alt="Chicken Biryani">
+								<h2>Thai Fired Rice</h2>
+								<p class="price">Rs. 250</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/shirmp fired.jpg" alt="Chicken Biryani">
+								<h2>Shirmp Fired Rice</h2>
+								<p class="price">Rs. 250</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/indo-chinese fired.jpg" alt="Chicken Biryani">
+								<h2>Indo-chinese Fired Rice</h2>
+								<p class="price">Rs. 250</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/schezwan chicken fried.jpg" alt="Chicken Biryani">
+								<h2>Schezwan Fired Rice</h2>
+								<p class="price">Rs. 250</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/panner paratha.jpg" alt="Chicken Biryani">
+								<h2>Panner paratha </h2>
+								<p class="price">Rs. 150</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/paratha.jpg" alt="Chicken Biryani">
+								<h2>Paratha</h2>
+								<p class="price">Rs. 100</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/malai kofta.jpg" alt="Chicken Biryani">
+								<h2>Malai Kofta</h2>
+								<p class="price">Rs. 250</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/naan.jpg" alt="Chicken Biryani">
+								<h2>Garlic Naan</h2>
+								<p class="price">Rs. 30</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/panner butter.jpg" alt="Chicken Biryani">
+								<h2>Panner Butter Masala</h2>
+								<p class="price">Rs. 150</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!--Dinner -->
+			<div id="dinner-menu" class="menu-list">
+				<!-- Dinner menu items here -->
+				<label for="filter">Filter:</label>
+				<select id="filter">
+					<option value="dinnerall">All</option>
+					<option value="dinnerveg">Dinner Items</option>
+					<option value="dinnernonveg">Noodles</option>
+				</select>
+			
+				<ul>
+					<li>
+						<h3>Dinner Menus</h3>
+						<div class="menu-container" >
+							<div class="menu-item">
+								<img src="images/food/night1.jpg" alt="Dinner Item 3">
+								<h2>Kerela Puttu- Kadalai curry</h2>
+								<p class="price">Rs. 100</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/Malabar-Parota night.jpg" alt="Dinner Item 3">
+								<h2>Malabar-Parota</h2>
+								<p class="price">Rs. 100</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/Idly.jpg" alt="Idly">
+								<h2>Idly</h2>
+								<p class="price">Rs. 40</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/Plain Dosai.jpg" alt="Dosai">
+								<h2>Plain Dosai</h2>
+								<p class="price">Rs. 55</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/vada1.jpg" alt="Vada">
+								<h2>Vadda With Chutney</h2>
+								<p class="price">Rs. 15</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<!-- Add more menu items as needed -->
+							<div class="menu-item">
+								<img src="images/food/paddu.jpg" alt="Paddu">
+								<h2>Paddu</h2>
+								<p class="price">Rs. 40</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/Parotta1.jpg" alt="Parota">
+								<h2>Parotta</h2>
+								<p class="price">Rs. 60</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							
+							<div class="menu-item">
+								<img src="images/food/Masala Dosai.jpg" alt="Masala">
+								<h2>Masala Dosai</h2>
+								<p class="price">Rs. 60</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<!-- Add more dinner menu items as needed -->
+							
+							<div class="menu-item">
+								<img src="images/food/idly sambahr.jpg" alt="Dinner Item 3">
+								<h2>Idly Sambhar</h2>
+								<p class="price">Rs. 40</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/chapthi night.jpg" alt="Dinner Item 3">
+								<h2>Roti</h2>
+								<p class="price">Rs. 45</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+						</div>
+						<h2>Noodles</h2>
+						<div class="menu-container" >
+							<div class="menu-item">
+								<img src="images/food/veg noodles.jpg" alt="Dinner Item 3">
+								<h2>Veg Noodles</h2>
+								<p class="price">Rs. 150</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							
+								<div class="menu-item">
+									<img src="images/food/hakka noodles.jpg" alt="Dinner Item 3">
+									<h2>Hakka Noodles</h2>
+									<p class="price">Rs. 150</p>
+									<button class="order-btn">Add to Cart</button>
+								</div>
+								
+									<div class="menu-item">
+										<img src="images/food/Garlic noodles.jpg" alt="Dinner Item 3">
+										<h2>Spicy Garlic Noodles</h2>
+										<p class="price">Rs. 150</p>
+										<button class="order-btn">Add to Cart</button>
+									</div>
+									
+										<div class="menu-item">
+											<img src="images/food/chicken noodles.jpg" alt="Dinner Item 3">
+											<h2>chicken Noodles</h2>
+											<p class="price">Rs. 150</p>
+											<button class="order-btn">Add to Cart</button>
+										</div>
+										
+										<div class="menu-item">
+												<img src="images/food/schezwan noodles.jpg" alt="Dinner Item 3">
+												<h2>Schezwan Noodles</h2>
+												<p class="price">Rs. 150</p>
+												<button class="order-btn">Add to Cart</button>
+										</div>
+										<div class="menu-item">
+											<img src="images/food/singapore noodles.jpg" alt="Dinner Item 3">
+											<h2>Singapore Noodles</h2>
+											<p class="price">Rs. 150</p>
+											<button class="order-btn">Add to Cart</button>
+										</div>
+										<div class="menu-item">
+											<img src="images/food/vermicelli noodles.jpg" alt="Dinner Item 3">
+											<h2>Vermicelli Noodles</h2>
+											<p class="price">Rs. 150</p>
+											<button class="order-btn">Add to Cart</button>
+										</div>
+										<div class="menu-item">
+											<img src="images/food/creamy mayo noodles.jpg" alt="Dinner Item 3">
+											<h2>Creamy Mayo Noodles</h2>
+											<p class="price">Rs. 150</p>
+											<button class="order-btn">Add to Cart</button>
+										</div>
+										</div>	
+
+
+					</li>
+				</ul>
+			</div>
+			
+				 <!--Starter items--> 
+			
+			<div id="starter-menu" class="menu-list">
+				<!-- starter menu items here -->
+				<label for="filter">Filter:</label>
+				<select id="filter">
+					<option value="starterall">All</option>
+					<option value="starterveg">Starters</option>
+					<option value="starternonveg">Sweets</option>
+				</select>
+				<ul>
+					<li>
+						<h3>Starter Menus</h3>
+						<div class="menu-container">
+							<div class="menu-item">
+								<img src="images/food/starters/aloo tikki.jpg" alt="Dinner Item 1">
+								<h2>Aloo Tikki</h2>
+								<p class="price">Rs. 80</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/starters/bitter ground fry.jpg" alt="Dinner Item 1">
+								<h2>Bitter Ground Fry</h2>
+								<p class="price">Rs. 80</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/starters/cabbage vada.jpg" alt="Dinner Item 1">
+								<h2>Cabbage Vada</h2>
+								<p class="price">Rs. 80</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/starters/cheese ballls.jpg" alt="Dinner Item 1">
+								<h2>Cheese Balls</h2>
+								<p class="price">Rs. 80</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/starters/corn pakoda.jpg" alt="Dinner Item 1">
+								<h2>Corn Pakoda</h2>
+								<p class="price">Rs. 80</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/starters/dal vada.jpg" alt="Dinner Item 1">
+								<h2>Dal Vada</h2>
+								<p class="price">Rs. 80</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/starters/fresh fries.jpg" alt="Dinner Item 1">
+								<h2>French Fries</h2>
+								<p class="price">Rs. 80</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/starters/mirichi bajji.jpg" alt="Dinner Item 1">
+								<h2>Mirichi Bajji</h2>
+								<p class="price">Rs. 80</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/starters/muruku.jpg" alt="Dinner Item 1">
+								<h2>Muruku</h2>
+								<p class="price">Rs. 80</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/starters/mysore bonda.jpg" alt="Dinner Item 1">
+								<h2>Mysore Bonda</h2>
+								<p class="price">Rs. 80</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/starters/onion pakoda.jpg" alt="Dinner Item 1">
+								<h2>Onion Pakoda</h2>
+								<p class="price">Rs. 80</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/starters/pan fried panner.jpg" alt="Dinner Item 1">
+								<h2>Pan Fried Panner</h2>
+								<p class="price">Rs. 100</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/starters/ribbon.jpg" alt="Dinner Item 1">
+								<h2>Ribbon Pakoda</h2>
+								<p class="price">Rs. 80</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/starters/samosa.jpg" alt="Dinner Item 1">
+								<h2>Samosa</h2>
+								<p class="price">Rs. 80</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+
+						</div>	
+						<h3>Sweets</h3>
+						<div class="menu-container">
+							<div class="menu-item">
+								<img src="images/food/starters/sweets/diamond.jpg" alt="Dinner Item 1">
+								<h2>Diamond Sweets</h2>
+								<p class="price">Rs. 80</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/starters/sweets/bengali.jpg" alt="Dinner Item 1">
+								<h2>Bengali Sweets</h2>
+								<p class="price">Rs. 80</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/starters/sweets/gulab jamun.jpg" alt="Dinner Item 1">
+								<h2>Gulab Jamun Sweets</h2>
+								<p class="price">Rs. 80</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/starters/sweets/gwalia.jpg" alt="Dinner Item 1">
+								<h2>Gwalia Sweets</h2>
+								<p class="price">Rs. 80</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/starters/sweets/kheer.jpg" alt="Dinner Item 1">
+								<h2>Kheer Sweets</h2>
+								<p class="price">Rs. 80</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/starters/sweets/laddu.jpg" alt="Dinner Item 1">
+								<h2>Laddu Sweets</h2>
+								<p class="price">Rs. 80</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/starters/sweets/milk cake.jpg" alt="Dinner Item 1">
+								<h2>Milk Cake</h2>
+								<p class="price">Rs. 80</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+						
+							<div class="menu-item">
+								<img src="images/food/starters/sweets/mysore pak.jpg" alt="Dinner Item 1">
+								<h2>Mysore Pak</h2>
+								<p class="price">Rs. 80</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+						
+							<div class="menu-item">
+								<img src="images/food/starters/sweets/rasagulla.jpg" alt="Dinner Item 1">
+								<h2>Rasagulla Sweets</h2>
+								<p class="price">Rs. 80</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/starters/sweets/rava burfi.jpg" alt="Dinner Item 1">
+								<h2>Rava Burfi Sweets</h2>
+								<p class="price">Rs. 80</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/starters/sweets/Custard-Rasgulla-2-1.jpg" alt="Dinner Item 1">
+								<h2>Custard-Rasgulla</h2>
+								<p class="price">Rs. 80</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/starters/sweets/Badam-Panjiri-2-1.jpg" alt="Dinner Item 1">
+								<h2>Badam-Panjiri Sweets</h2>
+								<p class="price">Rs. 80</p>
+								<div>
+							</div>	
+
+
+					</li>
+				</ul>
+			</div>
+
+			<!-- Beverages, juices, desserts -->
+			<div id="berevages-menu" class="menu-list">
+				 <!-- Beverages menu items here -->
+				 <label for="beverages-filter">Filter:</label>
+				 <select id="beverages-filter">
+					 <option value="beveall">All</option>
+					 <option value="bevedesserts">Desserts</option>
+					 <option value="beveice-cream">Ice Cream</option>
+					 <option value="bevejuices">Juices</option>
+				 </select>
+				 <ul>
+					<li>
+						<h3>Dessert Menus</h3>
+						<div class="menu-container">
+							
+								<div class="menu-item">
+                                <img src="images/food/berevages/angel-food-cake-100041-1.jpeg" alt="Dinner Item 1">
+                                <h2>Angel Food Cake</h2>
+                                <p class="price">Rs. 180</p>
+                                <button class="order-btn">Add to Cart</button>
+                            </div>
+                            <div class="menu-item">
+                                <img src="images/food/berevages/White-Chocolate-Nuts-Cups-2-1.jpg" alt="Dinner Item 1">
+                                <h2>White chocolate Nuts</h2>
+                                <p class="price">Rs. 180</p>
+                                <button class="order-btn">Add to Cart</button>
+                            </div>
+                            <div class="menu-item">
+                                <img src="images/food/berevages/Basundi-2-1.jpg" alt="Dinner Item 1">
+                                <h2>Basundi</h2>
+                                <p class="price">Rs. 180</p>
+                                <button class="order-btn">Add to Cart</button>
+                            </div>
+                            <div class="menu-item">
+                                <img src="images/food/berevages/Chaler-Payesh-2-1.jpg" alt="Dinner Item 1">
+                                <h2>Chaler-Payesh</h2>
+                                <p class="price">Rs. 180</p>
+                                <button class="order-btn">Add to Cart</button>
+                            </div>
+                            <div class="menu-item">
+                                <img src="images/food/berevages/Double-ka-Meetha-2-1.jpg" alt="Dinner Item 1">
+                                <h2>Double-ka-Meetha</h2>
+                                <p class="price">Rs. 180</p>
+                                <button class="order-btn">Add to Cart</button>
+                            </div>
+                            <div class="menu-item">
+                                <img src="images/food/berevages/Gulab-Jamun-Yogurt-Parfait-2-1.jpg" alt="Dinner Item 1">
+                                <h2>Gulab-Jamun-Yogurt-Parfait</h2>
+                                <p class="price">Rs. 180</p>
+                                <button class="order-btn">Add to Cart</button>
+                            </div>
+                            <div class="menu-item">
+                                <img src="images/food/berevages/Rabdi-2-1.jpg" alt="Dinner Item 1">
+                                <h2>Rabdi</h2>
+                                <p class="price">Rs. 180</p>
+                                <button class="order-btn">Add to Cart</button>
+                            </div>
+                            <div class="menu-item">
+                                <img src="images/food/berevages/Rajgira-Halwa-2-1.jpg" alt="Dinner Item 1">
+                                <h2>Rajgira-Halwa</h2>
+                                <p class="price">Rs. 180</p>
+                                <button class="order-btn">Add to Cart</button>
+                            </div>
+                            <div class="menu-item">
+                                <img src="images/food/berevages/Rasmalai-Tiramisu-2-1.jpg" alt="Dinner Item 1">
+                                <h2>Rasmalai-Tiramisu</h2>
+                                <p class="price">Rs. 250</p>
+                                <button class="order-btn">Add to Cart</button>
+                            </div>
+                            <div class="menu-item">
+                                <img src="images/food/berevages/snickers-rolls-26145-1.jpeg" alt="Dinner Item 1">
+                                <h2>snickers-rolls</h2>
+                                <p class="price">Rs. 180</p>
+                                <button class="order-btn">Add to Cart</button>
+                            </div>
+                        </div>
+						<h3>Juices</h3>
+						<div class="menu-container">
+							<div class="menu-item">
+								<img src="images/food/berevages/juices/tender coconut.jpg" alt="Dinner Item 1">
+								<h2>Tender Coconut</h2>
+								<p class="price">Rs. 50</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/berevages/juices/apple.jpg" alt="Dinner Item 1">
+								<h2>Apple juice</h2>
+								<p class="price">Rs. 50</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/berevages/juices/carrot.jpg" alt="Dinner Item 1">
+								<h2>Carrot juice</h2>
+								<p class="price">Rs. 50</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/berevages/juices/cranbeery.jpg" alt="Dinner Item 1">
+								<h2>Cranberry Juice</h2>
+								<p class="price">Rs. 50</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/berevages/juices/grape.jpg" alt="Dinner Item 1">
+								<h2>Grape Juice</h2>
+								<p class="price">Rs. 50</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/berevages/juices/mango.jpg" alt="Dinner Item 1">
+								<h2>Mango Juice</h2>
+								<p class="price">Rs. 50</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/berevages/juices/orange.jpg" alt="Dinner Item 1">
+								<h2>Orange Juice</h2>
+								<p class="price">Rs. 50</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/berevages/juices/pineaaple.jpg" alt="Dinner Item 1">
+								<h2>Pine Apple Juice</h2>
+								<p class="price">Rs. 50</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/berevages/juices/smoothies.jpg" alt="Dinner Item 1">
+								<h2>Smoothies</h2>
+								<p class="price">Rs. 50</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+							<div class="menu-item">
+								<img src="images/food/berevages/juices/tomoato.jpg" alt="Dinner Item 1">
+								<h2>Tomato Juice</h2>
+								<p class="price">Rs. 50</p>
+								<button class="order-btn">Add to Cart</button>
+							</div>
+
+
+							</div>
+							<h3>Ice-Creams</h3>
+							<div class="menu-container">
+								<div class="menu-item">
+									<img src="images/food/berevages/juices/ice-cream/rolled ice.jpg" alt="Dinner Item 1">
+									<h2>Rolled Ice-Cream</h2>
+									<p class="price">Rs. 100</p>
+									<button class="order-btn">Add to Cart</button>
+								</div>
+								<div class="menu-item">
+									<img src="images/food/berevages/juices/ice-cream/cookies and cream.jpg" alt="Dinner Item 1">
+									<h2>Cookies and Cream</h2>
+									<p class="price">Rs. 100</p>
+									<button class="order-btn">Add to Cart</button>
+								</div>
+								<div class="menu-item">
+									<img src="images/food/berevages/juices/ice-cream/roof ice.jpg" alt="Dinner Item 1">
+									<h2>Roof Ice-Cream</h2>
+									<p class="price">Rs. 100</p>
+									<button class="order-btn">Add to Cart</button>
+								</div>
+								<div class="menu-item">
+									<img src="images/food/berevages/juices/ice-cream/snow ice.jpg" alt="Dinner Item 1">
+									<h2>snow Ice-Cream</h2>
+									<p class="price">Rs. 100</p>
+									<button class="order-btn">Add to Cart</button>
+								</div>
+								<div class="menu-item">
+									<img src="images/food/berevages/juices/ice-cream/banana.jpg" alt="Dinner Item 1">
+									<h2>Banana Ice-Cream</h2>
+									<p class="price">Rs. 100</p>
+									<button class="order-btn">Add to Cart</button>
+								</div>
+								<div class="menu-item">
+									<img src="images/food/berevages/juices/ice-cream/bluebbery.jpg" alt="Dinner Item 1">
+									<h2>Blueberry Ice-Cream</h2>
+									<p class="price">Rs. 100</p>
+									<button class="order-btn">Add to Cart</button>
+								</div>
+								<div class="menu-item">
+									<img src="images/food/berevages/juices/ice-cream/chocolate.jpg" alt="Dinner Item 1">
+									<h2>Chocolate Ice-Cream</h2>
+									<p class="price">Rs. 100</p>
+									<button class="order-btn">Add to Cart</button>
+								</div>
+								<div class="menu-item">
+									<img src="images/food/berevages/juices/ice-cream/coffee ice.jpg" alt="Dinner Item 1">
+									<h2>Coffee Ice-Cream</h2>
+									<p class="price">Rs. 100</p>
+									<button class="order-btn">Add to Cart</button>
+								</div>
+								<div class="menu-item">
+									<img src="images/food/berevages/juices/ice-cream/cottage cheese.jpg" alt="Dinner Item 1">
+									<h2>Cottage cheese Ice-Cream</h2>
+									<p class="price">Rs. 100</p>
+									<button class="order-btn">Add to Cart</button>
+								</div>
+								<div class="menu-item">
+									<img src="images/food/berevages/juices/ice-cream/new england.jpg" alt="Dinner Item 1">
+									<h2>New England Ice-Cream</h2>
+									<p class="price">Rs. 100</p>
+									<button class="order-btn">Add to Cart</button>
+								</div>
+								<div class="menu-item">
+									<img src="images/food/berevages/juices/ice-cream/pineapple.jpg" alt="Dinner Item 1">
+									<h2>Pine Apple Ice-Cream</h2>
+									<p class="price">Rs. 100</p>
+									<button class="order-btn">Add to Cart</button>
+								</div>
+								
+								<div class="menu-item">
+									<img src="images/food/berevages/juices/ice-cream/strawberry.jpg" alt="Dinner Item 1">
+									<h2>Strawberry Ice-Cream</h2>
+									<p class="price">Rs. 100</p>
+									<button class="order-btn">Add to Cart</button>
+								</div>
+								</div>
+						</li>
+				</ul>
+            </div>
+		</main>
+		
+			<script src="js/user_dashboard.js"></script>
+</body>
+</html>
